@@ -25,7 +25,7 @@ namespace API.Services
 
             };
 
-            var creds = new SigningCredentials(_key, SecurityAlgorithms.HmacSha512);
+            var creds = new SigningCredentials(_key, SecurityAlgorithms.HmacSha512Signature);
 
             var tokenDescriptor = new SecurityTokenDescriptor
             {
